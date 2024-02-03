@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../utils.css" />
+    <link rel="stylesheet" href="../responsive.css" />
+    <link rel="stylesheet" href="../mystyle.css" />
+    <link rel="stylesheet" href="../myresponsive.css" />
+    <link rel="stylesheet" href="info-styles.css" />
+    <title>infoPage</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="/static/img/Goo%20Businesses.png" height="73px" />
+        </div>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/whyus">Why us?</a></li>
+        </ul>
+        <form class="form" action="/searching" method="post">
+          <div class="search">
+            <input
+              class="form-ele1"
+              type="text"
+              id="searchbarID"
+              name="seachbar"
+              placeholder="Search here..."
+              width="20vw"
+            />
+          </div>
+          <div class="btn">
+            <button class="bttn" type="submit">Search</button>
+          </div>
+        </form>
+
+        <a href="/searching">
+          <div class="navallproduct">All Services</div>
+        </a>
+      </nav>
+
+      <a href="/freetrail" class="freeTrl bblink"
+        >Get Your<br />Free Trial<br />up to $30</a
+      >
+    </header>
+
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Your infoPage Service Page</title>
+        <link rel="stylesheet" href="styles.css" />
+      </head>
+
+      <body>
+        <section class="c-section">
+          <h2 class="c-section__title"><span>Details </span></h2>
+          <ul class="c-services">
+            <li class="c-services__item">
+              <h3>Formatting & Clean up</h3>
+              <p>
+                100% Qualified leads ☆<br />
+                100% Satisfied guarantee
+              </p>
+            </li>
+            <li class="c-services__item">
+              <h3>Company Information</h3>
+              <p>
+                ✔ Company Name <br />
+                ✔ Website <br />
+                ✔ Location<br />
+                ✔ Company Headquarter<br />
+                ✔ Company Linkedin Profile<br />
+                ✔ Phone Number<br />
+              </p>
+            </li>
+            <li class="c-services__item">
+              <h3>Service Include</h3>
+              <p>
+                ☆ B2B lead generation <br />☆ Database Building <br />
+                ☆ B2B email list building <br />
+                ☆ Prospect list building <br />
+                ☆ Email list building
+              </p>
+            </li>
+            <li class="c-services__item">
+              <h3>company information</h3>
+              <p>
+                ✔ Mailing/Physical Address <br />
+                ✔ Business Email (100% Verified) ✔ <br />
+                ✔ Industry type <br />
+                ✔ Employee size <br />
+                ✔ Revenue <br />
+                ✔ Social media Link and many more etc...<br />
+              </p>
+            </li>
+            <li class="c-services__item">
+              <h3>Service Include</h3>
+
+              <p>
+                ☆ Web research <br />☆ Data scraping <br />☆ Data entry <br />☆
+                Linkedin lead generation By Linkedin sales navigator and many
+                more etc...
+              </p>
+            </li>
+            <li class="c-services__item">
+              <h3>Person Information</h3>
+              <p>
+                First Name ✔<br />
+                Last Name ✔ <br />Job role ✔<br />
+                Personal Email (100% verified) ✔ <br />Linkedin Profile ✔<br />
+                Company Name ✔ <br />Website ✔<br />
+                Social media Link
+              </p>
+            </li>
+          </ul>
+        </section>
+
+        <main class="infoPage-main">
+          <h1 class="infoPage-main-title">Revolutionize Your infoPage</h1>
+
+          <div class="infoPage-service-container">
+            <div class="infoPage-service-card">
+              <img
+                class="infoPage-service-image"
+                src="../public/pictures/website.webp"
+                alt="infoPage Store"
+              />
+              <h2 class="infoPage-service-title">Online Store Setup</h2>
+              <p class="infoPage-service-description">
+                Take your infoPage business online! We provide seamless and
+                customized online store setup to showcase your products to a
+                wider audience.
+              </p>
+              <select class="infoPage-service-fees" id="infoPage-service-fees">
+                <option value="" selected disabled>Select your package</option>
+                <option value="20">Basic</option>
+                <option value="40">Standard</option>
+                <option value="60">Premium</option>
+                <option value="80">Pro</option>
+              </select>
+              <div class="infoPage-service-cost">
+                Your estimated setup cost is
+                <span id="infoPage-service-cost"></span>
+              </div>
+              <form
+                class="infoPage-order-form"
+                action="order_process.php"
+                method="post"
+              >
+                <input
+                  type="text"
+                  id="infoPage-name"
+                  name="infoPage-name"
+                  class="infoPage-order-input"
+                  placeholder="Your infoPage Store Name"
+                  required
+                />
+                <input
+                  type="email"
+                  id="infoPage-email"
+                  name="infoPage-email"
+                  class="infoPage-order-input"
+                  placeholder="Your Email"
+                  required
+                />
+                <div class="country-code-container">
+                  <label for="country-code">Country Code</label>
+                  <input
+                    type="text"
+                    id="country-code"
+                    name="country-code"
+                    class="infoPage-order-input"
+                    placeholder="+02"
+                    required
+                  />
+                </div>
+                <input
+                  type="tel"
+                  id="customer-number"
+                  name="customer-number"
+                  class="infoPage-order-input"
+                  placeholder="Your Phone"
+                  required
+                />
+                <input
+                  type="tel"
+                  id="customer-number"
+                  name="customer-number"
+                  class="infoPage-order-input"
+                  placeholder="Your whatsapp Number (optional)"
+                />
+                <input
+                  type="number"
+                  id="infoPage-quantity"
+                  name="infoPage-quantity"
+                  class="infoPage-order-input"
+                  min="1"
+                  placeholder="Number of Products"
+                  required
+                />
+                <input
+                  type="submit"
+                  value="Start Your Journey"
+                  class="infoPage-order-submit"
+                />
+              </form>
+            </div>
+          </div>
+        </main>
+      </body>
+    </html>
+
+    <script>
+      document
+        .getElementById("infoPage-service-fees")
+        .addEventListener("change", function () {
+          document.getElementById("infoPage-service-cost").innerText =
+            this.value + "$";
+        });
+
+      document
+        .querySelector(".infoPage-menu-btn")
+        .addEventListener("click", function () {
+          const infoPageNavList = document.querySelector(
+            ".infoPage-main nav ul"
+          );
+          infoPageNavList.classList.toggle("show");
+        });
+
+      const infoPageMenuBtn = document.querySelector(".infoPage-menu-btn");
+      const infoPageNavList = document.querySelector(".infoPage-main nav ul");
+
+      infoPageMenuBtn.addEventListener("click", function () {
+        infoPageNavList.classList.toggle("show");
+      });
+
+      const infoPageSearchForm = document.querySelector(
+        ".infoPage-main .infoPage-search-form"
+      );
+    </script>
+  </body>
+</html>

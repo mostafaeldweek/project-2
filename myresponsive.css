@@ -1,0 +1,212 @@
+/* Responsive font size adjustments */
+@media (min-width: 40.625em) {
+  :root {
+    --s0: calc(1.25rem + 0.333vw);
+  }
+}
+
+@media (min-width: 48em) {
+  :root {
+    --s0: calc(1.4rem + 0.333vw);
+  }
+}
+
+@media (min-width: 62em) {
+  :root {
+    --s0: calc(1.6rem + 0.333vw);
+  }
+}
+
+/* Body font size adjustment for larger screens */
+@media (min-width: 48em) {
+  body {
+    font-size: 1.5rem;
+  }
+}
+
+/* Section title styling adjustments */
+@media (min-width: 40.625em) {
+  .c-section__title {
+    /* Add padding to section title */
+    padding: var(--s2) var(--s3) var(--s4);
+  }
+}
+
+@media (min-width: 40.625em) {
+  .c-section__title {
+    /* Customize section title layout for responsiveness */
+    display: flex;
+    align-items: self-start;
+    justify-content: flex-end;
+    position: relative;
+    text-align: unset;
+  }
+}
+
+@media (min-width: 40.625em) {
+  .c-section__title:after {
+    /* Adjust section title style after pseudo-element */
+    margin-left: auto;
+    margin-right: 0;
+    transform: translateY(2rem);
+  }
+}
+
+/* Adjustments for span styling within c-section */
+@media (min-width: 40.625em) {
+  .c-section span:after {
+    /* Fine-tune span styling after pseudo-element */
+    font-size: 23%;
+  }
+}
+
+@media (min-width: 40.625em) {
+  .c-section span:after {
+    /* Adjust span width for different screen sizes */
+    width: 47ch;
+  }
+}
+
+@media (min-width: 48em) {
+  .c-section span:after {
+    /* Further adjust span width for medium-sized screens */
+    width: 57ch;
+  }
+}
+
+@media (min-width: 62em) {
+  .c-section span:after {
+    /* Further adjust span width for larger screens */
+    width: 67ch;
+  }
+}
+
+/* Responsive grid adjustments for services section */
+@media (min-width: 40.625em) {
+  .c-services {
+    /* Configure grid layout for services section on smaller screens */
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: minmax(100px, 1fr);
+    padding: 0 var(--s3); /* Add padding to services section for smaller screens */
+  }
+}
+
+/* Transformations for service items on different screen sizes */
+@media (min-width: 40.625em) {
+  .c-services__item {
+    /* Adjust initial transform for service items on smaller screens */
+    transform: translateY(-85px);
+  }
+}
+
+@media (min-width: 48em) {
+  .c-services__item {
+    /* Further adjust transform for service items on medium-sized screens */
+    transform: translateY(-130px);
+  }
+}
+
+/* Specific grid placement for service items */
+@media (min-width: 40.625em) {
+  .c-services__item:nth-of-type(1) {
+    /* Set grid placement for the first service item on smaller screens */
+    grid-column: 1/-1;
+    grid-row: 4;
+  }
+}
+
+@media (min-width: 62em) {
+  .c-services__item:nth-of-type(1) {
+    /* Further adjust grid placement for the first service item on larger screens */
+    grid-column: 5/-1;
+    grid-row: 3;
+  }
+}
+/* Grid placement adjustments for the second service item on smaller screens */
+@media (min-width: 40.625em) {
+  .c-services__item:nth-of-type(2) {
+    grid-column: 1 / span 3; /* Set grid column range for smaller screens */
+    grid-row: 2; /* Set grid row placement for smaller screens */
+  }
+}
+
+/* Further adjustments for the second service item on larger screens */
+@media (min-width: 62em) {
+  .c-services__item:nth-of-type(2) {
+    grid-column: 3 / span 2; /* Adjust grid column range for larger screens */
+    grid-row: auto; /* Allow automatic grid row placement on larger screens */
+  }
+}
+
+/* Grid placement adjustments for the third service item on smaller screens */
+@media (min-width: 40.625em) {
+  .c-services__item:nth-of-type(3) {
+    grid-column: 4/-1; /* Set grid column range for smaller screens */
+  }
+}
+
+/* Further adjustments for the third service item on larger screens */
+@media (min-width: 62em) {
+  .c-services__item:nth-of-type(3) {
+    grid-column: 4/-1; /* Adjust grid column range for larger screens */
+    grid-row: 2; /* Set grid row placement for larger screens */
+  }
+}
+
+/* Grid placement adjustments for the fourth service item on smaller screens */
+@media (min-width: 40.625em) {
+  .c-services__item:nth-of-type(4) {
+    grid-column: 1 / span 4; /* Set grid column range for smaller screens */
+  }
+}
+
+/* Further adjustments for the fourth service item on larger screens */
+@media (min-width: 62em) {
+  .c-services__item:nth-of-type(4) {
+    grid-column: 1 / span 3; /* Adjust grid column range for larger screens */
+  }
+}
+
+/* Grid placement adjustments for the fifth service item on smaller screens */
+@media (min-width: 40.625em) {
+  .c-services__item:nth-of-type(5) {
+    grid-column: 5/-1; /* Set grid column range for smaller screens */
+  }
+}
+
+/* Further adjustments for the fifth service item on larger screens */
+@media (min-width: 62em) {
+  .c-services__item:nth-of-type(5) {
+    grid-column: 1 / span 4; /* Adjust grid column range for larger screens */
+  }
+}
+
+/* Grid placement adjustments for the sixth service item on smaller screens */
+@media (min-width: 40.625em) {
+  .c-services__item:nth-of-type(6) {
+    grid-column: 1 / span 4; /* Set grid column range for smaller screens */
+    grid-row: 1; /* Set grid row placement for smaller screens */
+  }
+}
+
+/* Further adjustments for the sixth service item on larger screens */
+@media (min-width: 62em) {
+  .c-services__item:nth-of-type(6) {
+    grid-column: 1 / span 2; /* Adjust grid column range for larger screens */
+    grid-row: 1; /* Set grid row placement for larger screens */
+  }
+}
+
+@media (min-width: 40.625em) {
+  .c-services__item:hover {
+    /* Adjust hover effect for service items on smaller screens */
+    transform: translateY(-93px);
+  }
+}
+
+@media (min-width: 48em) {
+  .c-services__item:hover {
+    /* Further adjust hover effect for service items on medium-sized screens */
+    transform: translateY(-138px);
+  }
+}
